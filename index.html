@@ -1,0 +1,286 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <style>
+    body {
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      background-image: url(Summer_Camp.png), url(camping_FILL0_wght400_GRAD0_opsz24.png);
+      background-repeat: no-repeat;
+      background-size: cover, auto;
+      background-repeat: no-repeat, no-repeat;
+      background-position: auto, center top;
+      max-width: 1250px;
+      box-sizing: border-box;
+    }
+    .subMess {
+      background: lightblue;
+      padding: 20px;
+      padding-right: 7%;
+      padding-left: 0px;
+      padding-top: 2%;
+      width: 63%;
+      height:50%;
+      box-sizing: border-box;
+      border-radius: 10px;
+      border: 2px dashed #1a739dd4;
+      background-image: url(tent-tree.png);
+      background-size: 40%;
+      background-repeat: no-repeat;
+      background-position: 10%, 50%;
+      position: absolute;
+      margin: 30px;
+      margin-left: 160px;
+      margin-top: 10%;
+      
+    }
+    .subF{
+      position: relative;
+      left:55%;
+      display: flex;
+      flex-direction: column;
+      padding-top: 46px;
+    }
+    
+    .subF.subH1 {
+      color: #1616de;
+      font-size: 35px;
+      display: inline;
+      padding-left: 450px;
+    }
+    .subF .subP {
+      color: brown;
+      font-size: 25px;
+      font-weight: 550;
+      font-style: italic;
+      font-stretch: semi-expanded;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      position: relative;
+      padding-bottom: 35px;
+      padding-left: 10px;
+    }
+
+    .subF #subB{
+       background-color: teal;
+       width:30%;
+       color: aliceblue;
+       padding: 6px;
+       border-radius: 5px;
+       position: relative;
+       top:10%;
+       right:15%;
+       padding-top: 9px;
+    }
+
+    .subF #subB:hover {
+      background-color: #000000;
+      border: 2px dashed #181818;
+      opacity: 1;
+
+    }
+    
+    #camp-activities-inquiry {
+      background: lightblue;
+      position: relative;
+      padding: 15px;
+      padding-right: 10%;
+      width: 71%;
+      box-sizing: border-box;
+      border-radius: 10px;
+      border: 2px dashed #1a739dd4;
+      background-image: url(tent-tree.png);
+      background-size: 40%;
+      background-repeat: no-repeat;
+      background-position: 10%, 50%;
+      margin: 30px;
+      margin-left: 150px;
+      
+    }
+
+    form {
+      position: relative;
+      left: 400px;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding-right: 30px;
+      padding-top: 20px;
+    }
+
+    label {
+      color: brown;
+      font-size: 18px;
+      font-weight: 500;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    h1 {
+      color: #1616de;
+      padding-left: 380px;
+      font-size: 35px;
+      display: inline;
+      animation: anime 36s infinite;
+    }
+
+    @keyframes anime {
+      25% {
+        color: teal;
+      }
+
+      50% {
+        color: #b80f0f;
+      }
+
+    }
+
+    #activity-select {
+      margin-top: 12px;
+      margin-bottom: 20px;
+      width: 45%;
+      height: 40px;
+      border-radius: 5px;
+      font-weight: 700;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: palevioletred;
+    }
+
+    #food-allergies {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      width: 45%;
+      height: 5.0em;
+      border-radius: 5px;
+      color: #2aac2a;
+      font-size: 17px;
+      font-weight: 600;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    #additional-info {
+      margin-top: 10px;
+      margin-bottom: 20px;
+      width: 45%;
+      height: 5.0em;
+      border-radius: 5px;
+      color: seagreen;
+      font-size: 17px;
+      font-weight: 600;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    button {
+      width: 25%;
+      border-radius: 5px;
+      height: 35px;
+      border: 1px dashed #181818;
+      background-color: teal;
+      transition: 0.5s;
+      transition-timing-function: linear;
+      color: blanchedalmond;
+      position: relative;
+      left: 40px;
+      font-size: larger;
+    }
+
+    button:hover {
+      background-color: #000000;
+      border: 2px dashed #181818;
+      opacity: 1;
+
+    }
+
+  </style>
+</head>
+
+<body id="body">
+  <section id="camp-activities-inquiry">
+    <h1>Camp Activities Inquiry</h1>
+    <form action="/submit-form" method="POST">
+      <label for="activity-select">Which camp activities are you most looking forward to?</label>
+      <select id="activity-select" name="activity">
+        <option value="">--Please choose an option--</option>
+        <option value="hiking">Hiking</option>
+        <option value="canoeing">Canoeing</option>
+        <option value="fishing">Fishing</option>
+        <option value="crafts">Crafts</option>
+        <option value="archery">Archery</option>
+      </select>
+      <label for="food-allergies">Food Allergies (if any)</label>
+      <textarea id="food-allergies" name="food_allergies" rows="4" cols="50"></textarea>
+      <label for="additional-info">Additional things the counselor should know</label>
+      <br>
+      <textarea id="additional-info" name="additional_info" rows="4" cols="50"></textarea>
+      <button type="submit" id="button">Submit</button>
+    </form>
+  </section>
+  <script>
+    let main = document.getElementById("camp-activities-inquiry");
+    let btn = document.getElementById("button");
+    let body = document.getElementById("body");
+
+    let messBox = document.createElement("div");
+    messBox.classList.add("class" , "subMess");
+    /*
+    messBox.style.backgroundColor ="lightblue";
+    messBox.style.padding = "20px";
+    messBox.style.padddingRight = "7%";
+    messBox.style.paddingLeft = "0px";
+    messBox.style.width = "64%";
+    messBox.style.boxSizing = "border-box";
+    messBox.style.borderRadius =  "10px";
+    messBox.style.border =  "2px dashed #1a739dd4";
+    messBox.style.backgroundImage= "url(tent-tree.png)";
+    messBox.style.backgroundSize = "40%";
+    messBox.style.backgroundRepeat = "no-repeat";
+    messBox.style.backgroundPosition = "10%, 50%";
+    messBox.style.position = "absolute";
+    messBox.style.margin = "30px";
+    messBox.style.marginLeft = "150px";
+    */
+    let messBoxH1  = document.createElement("h1");
+    messBoxH1.classList.add("class" , "subH1");
+    messBoxH1.innerHTML = "Thanks for the feedback";
+
+    let messBoxP  = document.createElement("p");
+    messBoxP.classList.add("class" , "subP")
+    messBoxP.innerHTML = "Want to send another inquiry?";
+
+    let messBoxButt = document.createElement("button");
+    messBoxButt.id = 'subB';
+    messBoxButt.innerHTML= "Send Another";
+    
+   let messForm = document.createElement("div");
+   messForm.classList.add("class" , "subF");
+
+   messForm.append(messBoxP , messBoxButt);
+
+   messBox.append(messBoxH1 , messForm);
+
+  
+    btn.addEventListener("click", function (x) {
+      x.preventDefault();
+      main.style.display = "none";
+      body.appendChild(messBox);
+      messBox.style.display ="block";
+      
+    });
+    
+    messBoxButt.addEventListener("click" , function(x) {
+       x.preventDefault();
+       main.style.display = "block";
+       messBox.style.display ="none";
+    });
+
+ 
+
+    
+
+
+
+
+  </script>
+</body>
+
+</html>
