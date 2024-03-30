@@ -18,24 +18,27 @@
     }
 
     @keyframes day {
-     10%{
-      background-image: linear-gradient(rgba(0, 0, 0 , 0.3) , rgba(0, 90, 3, 0.22)), url(Summer_Camp.png);
-     }
-     30%{
-      background-image: linear-gradient(rgba(0, 0, 0 , 0.7) , rgba(0, 70, 3, 0.22)), url(Summer_Camp.png);
-     }
-     50%{
-      background-image: linear-gradient(rgba(0, 0, 0 , 0.9) , rgba(0, 50, 3, 0.22)), url(Summer_Camp.png);
-     }
-     70%{
-      background-image: linear-gradient(rgba(0, 0, 0 , 1) , rgba(0, 0, 3, 0.7)), url(Summer_Camp.png);
-     }
+      10% {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 90, 3, 0.22)), url(Summer_Camp.png);
+      }
 
-     90%{
-      background-image: linear-gradient(rgba(0, 0, 0 , 0.3) , rgba(0, 10, 53, 0.22)), url(Summer_Camp.png);
-     }
+      30% {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 70, 3, 0.22)), url(Summer_Camp.png);
+      }
+
+      50% {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 50, 3, 0.22)), url(Summer_Camp.png);
+      }
+
+      70% {
+        background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 3, 0.7)), url(Summer_Camp.png);
+      }
+
+      90% {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 10, 53, 0.22)), url(Summer_Camp.png);
+      }
     }
-    
+
     .subMess {
       background-color: rgb(219, 243, 250);
       padding: 20px;
@@ -43,7 +46,7 @@
       padding-left: 0px;
       padding-top: 2%;
       width: 63%;
-      height:50%;
+      height: 55%;
       box-sizing: border-box;
       border-radius: 10px;
       border: 2px dashed #1a739dd4;
@@ -55,21 +58,26 @@
       margin: 30px;
       margin-left: 160px;
       margin-top: 10%;
-      
+      border: 12px solid transparent;
+      border-image: url(wood-frame22.2.jpg) 40 round;
+      transform: translate(34px, 20px);
+
     }
-    .subF{
+
+    .subF {
       position: relative;
-      left:55%;
+      left: 55%;
       display: grid;
-      padding-top: 46px;
+      padding-top: 40px;
     }
-    
+
     .subH1 {
       color: #1616de;
-      font-size: 34px;
+      font-size: 32px;
       display: inline;
       padding-left: 420px;
     }
+
     .subF .subP {
       color: #b50936;
       font-size: 25px;
@@ -82,50 +90,55 @@
       padding-left: 12px;
     }
 
-    .subF #subB{
-       background-color: teal;
-       width:30%;
-       color: aliceblue;
-       padding: 6px;
-       border-radius: 5px;
-       position: relative;
-       top:10%;
-       left:8%;
-       padding-top: 9px;
-       border-radius: 15px;
-       border-top-right-radius: 30px;
+    .subF #subB {
+      width: 45%;
+      border-radius: 10px;
+      height: 40px;
+      border: 1px dashed #181818;
+      background-color: teal;
+      transition: 0.5s;
+      transition-timing-function: linear;
+      color: blanchedalmond;
+      position: relative;
+      left: 7px;
+      font-size: 14px;
+      text-transform: uppercase;
+      box-sizing: border-box;
+      border: 12px solid transparent;
+      border-image: url(wood-frame22.2.jpg) 40 round;
     }
 
     .subF #subB:hover {
-      background-color: #000000;
-      border: 2px dashed #181818;
+      border-image: url(wood-frame22.2.jpg) 40 round;
+      transform: scale(1.1);
       opacity: 1;
 
     }
-    
+
     #camp-activities-inquiry {
       background: lightblue;
       position: relative;
       padding: 25px;
       padding-right: 10%;
-      width: 68%;
+      width: 66%;
       box-sizing: border-box;
       border-radius: 10px;
-      border: 2px dashed #1a739dd4;
+      border: 20px solid transparent;
       background-image: url(tent-tree.png);
       background-size: 40%;
       background-repeat: no-repeat;
       background-position: 10%, 65%;
       margin: 30px;
       margin-left: 150px;
-      
+      transform: translate(60px, 20px);
+      border-image: url(wood-frame22.2.jpg) 50 round;
     }
 
     form {
       position: relative;
-      margin-top:4%;
-      left: 420px;
-      display:flex;
+      margin-top: 4%;
+      left: 380px;
+      display: flex;
       flex-direction: column;
       width: 80%;
     }
@@ -142,10 +155,10 @@
       color: #1616de;
       padding-left: 400px;
       padding-top: 20px;
-      font-size: 30px;
+      font-size: 22px;
       display: inline;
       animation: anime 36s infinite;
-      
+
     }
 
     @keyframes anime {
@@ -170,17 +183,13 @@
       color: palevioletred;
     }
 
-    #food-allergies {
-      margin-top: 20px;
-      margin-bottom: 20px;
+    #NewFoodAllergies {
       width: 65%;
-      height: 5.0em;
-      border-radius: 5px;
-      color: #2aac2a;
-      font-size: 17px;
-      font-weight: 600;
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      border-top-right-radius: 50px 20px;
+      height: 40px;
+      border-radius: 12px;
+      font-weight: 700;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: palevioletred;
     }
 
     #additional-info {
@@ -196,7 +205,7 @@
       border-top-right-radius: 50px 20px;
     }
 
-    button {
+    #button {
       width: 65%;
       border-radius: 10px;
       height: 40px;
@@ -207,17 +216,41 @@
       color: blanchedalmond;
       position: relative;
       left: 5px;
-      font-size: larger;
+      font-size: 14px;
       text-transform: uppercase;
+      box-sizing: border-box;
+      border: 12px solid transparent;
+      border-image: url(wood-frame22.2.jpg) 40 round;
     }
 
-    button:hover {
-      background-color: #000000;
-      border: 2px dashed #181818;
+    #button:hover {
+      border-image: url(wood-frame22.2.jpg) 40 round;
+      transform: scale(1.1);
       opacity: 1;
 
     }
 
+    .errorA {
+      animation: error 2s linear infinite;
+    }
+
+    @keyframes error {
+      from {
+        border: 3px solid red
+      }
+
+      to {
+        border: none;
+      }
+    }
+
+    #label2 {
+      transform: translateY(24px);
+    }
+
+    #label0 {
+      transform: translateY(10px);
+    }
   </style>
 </head>
 
@@ -247,50 +280,184 @@
     let btn = document.getElementsByTagName("button")[0];
     let body = document.getElementsByTagName("body")[0];
 
+    let foodAllergies = document.getElementsByTagName("textarea")[0];
+    let addInfo = document.getElementsByTagName("textarea")[1];
+    let activitySelect = document.getElementsByTagName("select")[0];
+  
+    let label2 = document.getElementsByTagName("label")[2];
+    label2.setAttribute("id", "label2");
+
+    let label0 = document.getElementsByTagName("label")[0];
+    label0.setAttribute("id", "label0");
+
+    btn.setAttribute("id", "button");
+
     let messBox = document.createElement("div");
-    messBox.classList.add("class" , "subMess");
-   
-    let messBoxH1  = document.createElement("h1");
-    messBoxH1.classList.add("class" , "subH1");
+    messBox.classList.add("class", "subMess");
+
+    let messBoxH1 = document.createElement("h1");
+    messBoxH1.classList.add("class", "subH1");
     messBoxH1.innerHTML = "Thanks for the feedback";
 
-    let messBoxP  = document.createElement("p");
-    messBoxP.classList.add("class" , "subP")
+    let messBoxP = document.createElement("p");
+    messBoxP.classList.add("class", "subP")
     messBoxP.innerHTML = "Want to send another inquiry?";
 
     let messBoxButt = document.createElement("button");
     messBoxButt.id = 'subB';
-    messBoxButt.innerHTML= "Send Another";
+    messBoxButt.innerHTML = "Send Another";
+
+    let messForm = document.createElement("div");
+    messForm.classList.add("class", "subF");
+
+    messForm.append(messBoxP, messBoxButt);
+    messBox.append(messBoxH1, messForm);
     
-   let messForm = document.createElement("div");
-   messForm.classList.add("class" , "subF");
+    let NewFoodAllergies = document.createElement("select");
+    NewFoodAllergies.id = "NewFoodAllergies";
 
-   messForm.append(messBoxP , messBoxButt);
+    var optionAA = document.createElement("option");
+    optionAA.text = "--Please choose an option--";
+    optionAA.value = "";
+    
 
-   messBox.append(messBoxH1 , messForm);
+    var optionA = document.createElement("option");
+    optionA.text = "None";
 
-  
-    btn.addEventListener("click", function (x) {
+    var option1 = document.createElement("option");
+    option1.text = "Milk";
+
+    var option2 = document.createElement("option");
+    option2.text = "Eggs";
+
+    var option3 = document.createElement("option");
+    option3.text = "Caffiene";
+
+    var option4 = document.createElement("option");
+    option4.text = "Peanuts";
+
+    var option5 = document.createElement("option");
+    option5.text = "Tree Nuts";
+
+    var option6 = document.createElement("option");
+    option6.text = "Seaseme";
+
+    var option7 = document.createElement("option");
+    option7.text = "Soy";
+
+    var option8 = document.createElement("option");
+    option8.text = "Fish";
+
+    var option9 = document.createElement("option");
+    option9.text = "ShellFish";
+
+    var option10 = document.createElement("option");
+    option10.text = "Wheat";
+
+    var option11 = document.createElement("option");
+    option11.text = "Celery";
+
+    var option12 = document.createElement("option");
+    option12.text = "Carrot";
+
+    var option13 = document.createElement("option");
+    option13.text = "Avacado";
+
+    var option14 = document.createElement("option");
+    option14.text = "Bell Pepper";
+
+    var option15 = document.createElement("option");
+    option15.text = "Potato";
+    
+    var option16 = document.createElement("option");
+    option16.text = "Pumpkin";
+
+    var option17 = document.createElement("option");
+    option17.text = "Mushroom";
+
+    var option18 = document.createElement("option");
+    option18.text = "Onion";
+
+    var option19 = document.createElement("option");
+    option19.text = "Mustard";
+
+    var option20 = document.createElement("option");
+    option20.text = "Spices";
+
+    foodAllergies.replaceWith(NewFoodAllergies);
+
+    NewFoodAllergies.add(optionAA);
+    NewFoodAllergies.add(optionA);
+    NewFoodAllergies.add(option1);
+    NewFoodAllergies.add(option2);
+    NewFoodAllergies.add(option3);
+    NewFoodAllergies.add(option4);
+    NewFoodAllergies.add(option5);
+    NewFoodAllergies.add(option6);
+    NewFoodAllergies.add(option7);
+    NewFoodAllergies.add(option8);
+    NewFoodAllergies.add(option9);
+    NewFoodAllergies.add(option10);
+    NewFoodAllergies.add(option11);
+    NewFoodAllergies.add(option12);
+    NewFoodAllergies.add(option13);
+    NewFoodAllergies.add(option14);
+    NewFoodAllergies.add(option15);
+    NewFoodAllergies.add(option16);
+    NewFoodAllergies.add(option17);
+    NewFoodAllergies.add(option18);
+    NewFoodAllergies.add(option19);
+    NewFoodAllergies.add(option20);
+    
+    let connect = true;
+    function valid() {
+      if (NewFoodAllergies.value === "" && activitySelect.value === "") {
+         NewFoodAllergies.setAttribute("class", "errorA");
+         activitySelect.setAttribute("class", "errorA");
+         connect = false;
+      }
+      else if(NewFoodAllergies.value !== "" && activitySelect.value !== ""){
+        NewFoodAllergies.removeAttribute("class", "errorA");
+        activitySelect.removeAttribute("class", "errorA");
+        connect = true;
+      }
+      else if (NewFoodAllergies.value !== "" && activitySelect.value === "" ) {
+         activitySelect.setAttribute("class", "errorA");
+          NewFoodAllergies.removeAttribute("class", "errorA");
+         connect = false;
+      }
+      else if(NewFoodAllergies.value === "" && activitySelect.value !== ""){
+         NewFoodAllergies.setAttribute("class", "errorA");
+        activitySelect.removeAttribute("class", "errorA");
+        connect = false;
+      }
+    }
+
+
+    btn.onclick = (x) => {
+      valid();
       x.preventDefault();
-      main.style.display = "none";
-      body.appendChild(messBox);
-      messBox.style.display ="block";
-      
-    });
+      if(connect == true){
+        main.style.display = "none";
+        body.appendChild(messBox);
+        messBox.style.display = "block";
+      }
+    }    
     
-    messBoxButt.addEventListener("click" , function(x) {
-       x.preventDefault();
-       document.getElementById("activity-select").value = "--Please choose an option--";
-       document.getElementById("additional-info").value = "";
-       document.getElementById("food-allergies").value = "";
-       main.style.display = "block";
-       messBox.style.display ="none";
+
+    messBoxButt.addEventListener("click", function (y) {
+      y.preventDefault();
+      NewFoodAllergies.value = "";
+      activitySelect.value == "";
+      addInfo.value = "";
+      messBox.style.display = "none";
+      main.style.display = "block";
 
     });
 
- 
 
-    
+
+
 
 
 
